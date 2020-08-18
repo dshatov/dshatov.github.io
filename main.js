@@ -1,9 +1,20 @@
 (function () {
+    var themeToggle = document.getElementById("theme_toggle");
+    function switchTheme() {
+        var dark = document.documentElement.classList.toggle("darkmode");
+        themeToggle.innerHTML = dark ? '🌙': '💡';
+        localStorage.setItem("theme", dark ? "dark" : "light");
+    }
+
+    themeToggle.addEventListener("click", switchTheme);
+
     function setTheme(dark) {
         if (dark) {
+            themeToggle.innerHTML = '🌙';
             // A dark color scheme preference is set so we add the class from our html element
             document.documentElement.classList.add("darkmode");
         } else {
+            themeToggle.innerHTML = '💡';
             // No dark color scheme preference is set so we remove the class from our html element
             document.documentElement.classList.remove("darkmode");
         }
@@ -19,8 +30,3 @@
     checkPreference(preference_query);
     preference_query.addListener(checkPreference);
 })()
-
-function switchTheme() {
-    var dark = document.documentElement.classList.toggle("darkmode");
-    localStorage.setItem("theme", dark ? "dark" : "light");
-}
