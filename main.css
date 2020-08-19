@@ -115,6 +115,7 @@ html.darkmode summary {
     right: 16px;
     font-size: 48px;
     z-index: 99;
+    cursor: pointer;
 }
 
 /* ---------------- */
