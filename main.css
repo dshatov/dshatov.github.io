@@ -92,15 +92,19 @@ html.darkmode body {
     color: white;
     background: #444
 }
+
 html.darkmode a:link {
     color: #5bf
 }
+
 html.darkmode a:visited {
     color: #ccf
 }
+
 html.darkmode details {
     background: #555;
 }
+
 html.darkmode summary {
     border-bottom: 1px solid #e2e8f00e;
 }
@@ -110,4 +114,18 @@ html.darkmode summary {
     top: 16px;
     right: 16px;
     font-size: 48px;
+    z-index: 99;
+}
+
+/* ---------------- */
+
+#playerframe {
+    /* zoom: 0.75; */
+    /* transform: scale(0.75); */
+    /* transform-origin: 0 0; */
+    height: 450px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 16px;
 }
