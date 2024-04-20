@@ -2,8 +2,8 @@ body {
     max-width: 95vw;
     margin: 10px auto;
     padding: 0 10px;
-    font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: #e45b40;
+    font: 18px/1.5 "Reggae One", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #ff7185;
     background: #000;
 }
 
@@ -21,7 +21,8 @@ img {
 
 iframe {
     display: block;
-    width: 100%;
-    height: 80vh;
+    width: 640px;
+    height: 360px;
     border: none;
+    image-rendering: pixelated;
 }
